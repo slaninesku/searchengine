@@ -1,0 +1,23 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    username: root
+    password: root1234
+    url: jdbc:mysql://localhost:3306/search_engine?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+      ddl-auto: create
+      show-sql: true
+
+# example values
+indexing-settings:
+  sites:
+    - url: https://aoglonass.ru/
+      name: АО ГЛОНАСС
+    - url: https://www.skillbox.ru
+      name: Skillbox
